@@ -1,0 +1,262 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background-color: #f8f8f5;
+    border-radius: 20px;
+}
+
+.informations-personnelles {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.informations-personnelles h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.informations-personnelles h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.informations-personnelles p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.biographie {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.biographie h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.biographie p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.competences {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.competences h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.barre-competence {
+    margin-bottom: 10px;
+}
+
+.barre-competence span {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.barre-competence .barre {
+    height: 20px;
+    background-color: #112f3f;
+}
+
+.projets {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.projets h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section-projet {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section-projet h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.projet {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.projets button {
+    font-size: 20px;
+    padding: 15px 30px;
+    background-color: #112f3f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.projets button:hover {
+    transform: scale(1.1);
+}
+
+.informations-personnelles,
+.biographie,
+.competences,
+.projets {
+    width: 80%;
+}
+
+.informations-personnelles img {
+    width: 200px;
+    height: 200px;
+}
+
+.projets .section-projet {
+    flex-direction: column;
+}
+
+.projets .section-projet .projet {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+
+    .informations-personnelles h1 {
+        font-size: 28px;
+    }
+
+    .informations-personnelles h2 {
+        font-size: 22px;
+    }
+
+    .informations-personnelles p {
+        font-size: 20px;
+    }
+
+    .biographie h2 {
+        font-size: 28px;
+    }
+
+    .biographie p {
+        font-size: 20px;
+    }
+
+    .competences h2 {
+        font-size: 28px;
+    }
+
+    .barre-competence span {
+        font-size: 20px;
+    }
+
+    .projets h2 {
+        font-size: 28px;
+    }
+
+    .section-projet h3 {
+        font-size: 22px;
+    }
+}
+
+.contact-form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #333;
+}
+
+.projets .section-projet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projets .section-projet .projet {
+    flex-basis: 48%;
+    margin-bottom: 20px;
+}
+
+.projets .section-projet .projet img {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+nav {
+    background-color: #f1f1ec;
+    padding: 10px;
+    color: #112f3f;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li a {
+    color: #112f3f;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.menu li a:hover {
+    background-color: #112f3f;
+    color: #ffffff;
+    border-radius: 5px;
+}

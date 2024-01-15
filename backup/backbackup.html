@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <style>
+        /* Styles pour le portfolio avec le branding d'Apple */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-size: 18px; /* Augmenter la taille de police pour une meilleure lisibilité */
+            background-color: #f8f8f5;
+        }
+
+        .informations-personnelles {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .informations-personnelles h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .informations-personnelles h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .informations-personnelles p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .biographie {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .biographie h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .biographie p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .competences {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .competences h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .barre-competence {
+            margin-bottom: 10px;
+        }
+
+        .barre-competence span {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .barre-competence .barre {
+            height: 20px;
+            background-color: #000;
+        }
+
+        .projets {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .projets h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .section-projet {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .section-projet h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .projet {
+            width: 200px;
+            height: 200px;
+        }
+
+        /* Styles pour le menu */
+        nav {
+            background-color: #f1f1ec;
+            padding: 10px;
+            color: #112f3f;
+        }
+
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu li {
+            margin: 0 10px;
+        }
+
+        .menu li a {
+            color: #112f3f;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+
+        .menu li a:hover {
+            background-color: #112f3f;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#accueil"><img src="Logo1.png" alt="Logo" width="40px"></a></li>
+            <li><a href="#projets-personnels">Projets personnels</a></li>
+            <li><a href="#projets-scolaires">Projets scolaires</a></li>
+            <li><a href="#universite-de-corse">Université de Corse</a></li>
+        </ul>
+    </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Emerick Belin</title>
+    <style>
+        /* Styles pour le portfolio avec le branding d'Apple */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-size: 18px; /* Augmenter la taille de police pour une meilleure lisibilité */
+            border-radius: 20px;
+        }
+
+        .informations-personnelles {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .informations-personnelles h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .informations-personnelles h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .informations-personnelles p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .biographie {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .biographie h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .biographie p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .competences {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .competences h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .barre-competence {
+            margin-bottom: 10px;
+        }
+
+        .barre-competence span {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .barre-competence .barre {
+            height: 20px;
+            background-color: #112f3f;
+        }
+
+        .projets {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .projets h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .section-projet {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .section-projet h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .projet {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        .projets button {
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #112f3f;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* BEGIN: Styles supplémentaires */
+        .projets button {
+            border-radius: 10px;
+            font-size: 20px; /* Augmenter la taille de police du bouton */
+            padding: 15px 30px; /* Augmenter le padding du bouton */
+            background-color: #112f3f;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s; /* Ajouter un effet de transition */
+        }
+
+        .projets button:hover {
+            transform: scale(1.1); /* Augmenter la taille au survol */
+        }
+
+        .informations-personnelles, .biographie, .competences, .projets {
+            width: 80%; /* Augmenter la largeur des sections */
+        }
+
+        .informations-personnelles img {
+            width: 200px; /* Augmenter la taille de l'image de profil */
+            height: 200px;
+        }
+
+        .projets .section-projet {
+            flex-direction: column; /* Changer la disposition en vertical */
+        }
+
+        .projets .section-projet .projet {
+            width: 100%; /* Rendre les projets en pleine largeur */
+        }
+
+        /* Augmenter la taille des éléments à l'écran */
+        @media screen and (min-width: 768px) {
+            body {
+                font-size: 20px;
+            }
+
+            .informations-personnelles h1 {
+                font-size: 28px;
+            }
+
+            .informations-personnelles h2 {
+                font-size: 22px;
+            }
+
+            .informations-personnelles p {
+                font-size: 20px;
+            }
+
+            .biographie h2 {
+                font-size: 28px;
+            }
+
+            .biographie p {
+                font-size: 20px;
+            }
+
+            .competences h2 {
+                font-size: 28px;
+            }
+
+            .barre-competence span {
+                font-size: 20px;
+            }
+
+            .projets h2 {
+                font-size: 28px;
+            }
+
+            .section-projet h3 {
+                font-size: 22px;
+            }
+        }
+    .contact-form {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form textarea {
+        height: 150px;
+    }
+
+    .contact-form input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .contact-form input[type="submit"]:hover {
+        background-color: #333;
+    }
+</style>
+    </style>
+</head>
+<body>
+    <div class="informations-personnelles">
+        <h1>Emerick Belin</h1>
+        <h2>Étudiant en BUT métiers du multimédia et de l'internet</h2>
+        <p>emerick.belin@gmail.com</p>
+        <img src="portfolio_profil.png" alt="Photo de profil" width="500px" height="1200" style="border-radius: 15px;">
+    </div>
+
+    <div class="biographie">
+        <h2>Biographie</h2>
+        <p>Étudiant en MMI à l'université de Corte, j'ai depuis petit la passion de l'illustration et des arts graphiques. Je poursuis donc mes études dans l'objéctifs de développer mes compétences dans la suite Adobe et avoir les compétences nécessaires de développement afin d'exercer les métiers de graphistes en Webdesign et illustrateur. J'aimerais beaucoup apprend à développer des identitées et chartes graphiques.</p>
+    </div>
+
+    <div class="competences">
+        <h2>Compétences</h2>
+        <div class="barre-competence">
+            <span>Photoshop</span>
+            <div class="barre" style="width: 80%; border-radius: 5px;"></div>
+        </div>
+        <div class="barre-competence">
+            <span>Illustrator</span>
+            <div class="barre" style="width: 60%; border-radius: 5px;"></div>
+        </div>
+        <div class="barre-competence">
+            <span>HTML</span>
+            <div class="barre" style="width: 50%; border-radius: 5px;"></div>
+        </div>
+        <div class="barre-competence">
+            <span>CSS</span>
+            <div class="barre" style="width: 40%; border-radius: 5px;"></div>
+        </div>
+        <div class="barre-competence">
+            <span>Premier Pro</span>
+            <div class="barre" style="width: 15%; border-radius: 5px;"></div>
+        </div>
+        <div class="barre-competence">
+            <span>Word</span>
+            <div class="barre" style="width: 50%; border-radius: 5px;"></div>
+        </div>
+    </div>
+
+    <style>
+        .projets .section-projet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .projets .section-projet .projet {
+            flex-basis: 48%;
+            margin-bottom: 20px;
+        }
+
+        .projets .section-projet .projet img {
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        }
+    </style>
+
+    <div class="projets">
+        <h2>Projets</h2>
+        <div class="section-projet">
+            <h3>Projets personnels</h3>
+            <div class="projet">
+                <img src="image/personnel/Aqua2.png" alt="Projet 1">
+            </div>
+            <div class="projet">
+                <img src="image/personnel/GOT.png" alt="Projet 2">
+            </div>
+            <button>Voir plus</button> 
+        </div>
+        <div class="section-projet">
+            <h3>Projets scolaires</h3>
+            <div class="projet">
+                <img src="image/Scolaire/Blue12.png" alt="Projet 3">
+            </div>
+            <div class="projet">
+                <img src="image/Scolaire/motif2.png" alt="Projet 4">
+            </div>
+            <button>Voir plus</button>
+        </div>
+    </div>
+
+<div class="contact-form">
+    <h2>Contactez-moi</h2>
+    <form>
+        <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone">
+        </div>
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
+<div class="reseaux-sociaux">
+    <a href="" target="_blank">
+        <img src="instagram.png" alt="Instagram" width="50px">
+    </a>
+    <a href="X.png" target="_blank">
+        <img src="x.png" alt="X" width="80px">
+    </a>
+</div>
+
+</body>
+</html>
